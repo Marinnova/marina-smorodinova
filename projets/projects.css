@@ -65,7 +65,7 @@ body.projects-body {
 .header .left-block a,
 .header .right-block a {
  text-decoration: none;
- font-size: 30px;
+ font-size: 50px;
  color: transparent;
  background: linear-gradient(to right, transparent 0%, rgba(5, 60, 54, 0.7) 50%, transparent 100%);
  background-size: 200% 100%;
