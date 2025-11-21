@@ -10,7 +10,7 @@ body {
 
 
 body.projects-body {
- overflow: hidden;
+ overflow: auto;
 }
 
 
@@ -65,7 +65,7 @@ body.projects-body {
 .header .left-block a,
 .header .right-block a {
  text-decoration: none;
- font-size: 50px;
+ font-size: 30px;
  color: transparent;
  background: linear-gradient(to right, transparent 0%, rgba(5, 60, 54, 0.7) 50%, transparent 100%);
  background-size: 200% 100%;
@@ -82,8 +82,7 @@ body.projects-body {
  justify-content: space-between;
  align-items: flex-start;
  padding: 120px 60px;
- height: 100vh;
- overflow: hidden;
+ min-height: 100vh;
  box-sizing: border-box;
  gap: 40px;
 }
@@ -271,7 +270,9 @@ body.projects-body {
 
 .project-media {
   flex-shrink: 0;
-  width: 680px;               /* même largeur que ta galerie */
+  width: 100%; /* prend toute la largeur dispo sur mobile */
+  max-width: 680px; /* limite sur desktop */
+  margin: 0 auto; /* centre le bloc */          
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,6 +335,26 @@ body.projects-body {
     width: 100%;
   }
 }
+
+/* ==== Contenu multimédia responsive ==== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* =====================================================
    LIGHTBOX (agrandissement d'image)
